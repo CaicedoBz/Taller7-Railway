@@ -1,0 +1,15 @@
+# --- Artefactos de ejecucion que NO deben viajar en el repo ---
+# .tox/ : ambientes virtuales que crea tox
+.tox/
+# __pycache__/ : bytecode compilado, se regenera solo
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+# *.log : registros que escribe loguru al correr la API
+*.log
+
+# --- OJO: model-pkg/*.whl SI se versiona ---
+# requirements.txt instala el modelo desde ./model-pkg/model_abandono-X.X.X-py3-none-any.whl.
+# Sin ese archivo en el repo, el build del contenedor falla en Railway y en Docker.
