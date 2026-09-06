@@ -1,12 +1,9 @@
-# bankchurn-docker-api
+# Taller 7 — Despliegue continuo en PaaS
 
-API de predicción de abandono de clientes (*bank churn*) empaquetada en un contenedor Docker.
-Repositorio base de los talleres 7, 8 y 9 del curso **Proyecto: Desarrollo de Soluciones**
-(MAIA — Universidad de los Andes), que comparten el mismo material de partida.
-
-- **Taller 7** — despliegue continuo en Railway (PaaS) conectado a este repositorio.
-- **Taller 8** — construcción de la imagen y ejecución del contenedor sobre una instancia EC2.
-- **Taller 9** — publicación de la imagen en AWS ECR y despliegue en ECS.
+Taller del curso **Proyecto: Desarrollo de Soluciones** (MAIA — Universidad de los Andes).
+Despliegue de una API de predicción de abandono de clientes (*bank churn*) en un contenedor
+Docker sobre **Railway**, conectado a este repositorio para que cada push dispare
+automáticamente un nuevo build y despliegue.
 
 ## Estructura
 
